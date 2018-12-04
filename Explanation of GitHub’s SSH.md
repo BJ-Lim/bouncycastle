@@ -1,17 +1,19 @@
-¸¹Àº Git ¼­¹öµéÀº SSH °ø°³Å°·Î ÀÎÁõÇÑ´Ù.
-°ø°³Å°¸¦ »ç¿ëÇÏ·Á¸é ÀÏ´Ü °ø°³Å°¸¦ ¸¸µé¾î¾ß ÇÑ´Ù. 
-°ø°³Å°¸¦ ¸¸µå´Â ¹æ¹ýÀº ¸ðµç ¿î¿µÃ¼Á¦°¡ ºñ½ÁÇÏ´Ù. 
-¸ÕÀú Å°°¡ ÀÖ´ÂÁöºÎÅÍ È®ÀÎÇÏÀÚ. »ç¿ëÀÚÀÇ SSH Å°µéÀº ±âº»ÀûÀ¸·Î »ç¿ëÀÚÀÇ ~/.ssh µð·ºÅä¸®¿¡ ÀúÀåÇÑ´Ù.
-±×·¡¼­ ¸¸¾à µð·ºÅä¸®ÀÇ ÆÄÀÏÀ» »ìÆìº¸¸é °ø°³Å°°¡ ÀÖ´ÂÁö È®ÀÎÇÒ ¼ö ÀÖ´Ù:
+ë§Žì€ Git ì„œë²„ë“¤ì€ SSH ê³µê°œí‚¤ë¡œ ì¸ì¦í•œë‹¤.
+
+ê³µê°œí‚¤ë¥¼ ì‚¬ìš©í•˜ë ¤ë©´ ì¼ë‹¨ ê³µê°œí‚¤ë¥¼ ë§Œë“¤ì–´ì•¼ í•œë‹¤. 
+
+ê³µê°œí‚¤ë¥¼ ë§Œë“œëŠ” ë°©ë²•ì€ ëª¨ë“  ìš´ì˜ì²´ì œê°€ ë¹„ìŠ·í•˜ë‹¤. 
+ë¨¼ì € í‚¤ê°€ ìžˆëŠ”ì§€ë¶€í„° í™•ì¸í•˜ìž. ì‚¬ìš©ìžì˜ SSH í‚¤ë“¤ì€ ê¸°ë³¸ì ìœ¼ë¡œ ì‚¬ìš©ìžì˜ ~/.ssh ë””ë ‰í† ë¦¬ì— ì €ìž¥í•œë‹¤.
+ê·¸ëž˜ì„œ ë§Œì•½ ë””ë ‰í† ë¦¬ì˜ íŒŒì¼ì„ ì‚´íŽ´ë³´ë©´ ê³µê°œí‚¤ê°€ ìžˆëŠ”ì§€ í™•ì¸í•  ìˆ˜ ìžˆë‹¤:
 
 $ cd ~/.ssh
 $ ls
 authorized_keys2  id_dsa       known_hosts
 config            id_dsa.pub
-something, something.pubÀÌ¶ó´Â Çü½ÄÀ¸·Î µÈ ÆÄÀÏÀ» º¼ ¼ö ÀÖ´Ù.
-somethingÀº º¸Åë id_dsa³ª id_rsa¶ó°í µÅ ÀÖ´Ù. 
-±×Áß .pubÆÄÀÏÀÌ °ø°³Å°ÀÌ°í ´Ù¸¥ ÆÄÀÏÀº °³ÀÎÅ°ÀÌ´Ù. ¸¸¾à ÀÌ ÆÄÀÏÀÌ ¾ø°Å³ª .ssh µð·ºÅä¸®µµ ¾øÀ¸¸é ssh-keygenÀÌ¶ó´Â ÇÁ·Î±×·¥À¸·Î Å°¸¦ »ý¼ºÇØ¾ß ÇÑ´Ù. 
-ssh-keygen ÇÁ·Î±×·¥Àº ¸®´ª½º³ª MacÀÇ SSH ÆÐÅ°Áö¿¡ Æ÷ÇÔµÅ ÀÖ°í À©µµ´Â MSysGit ÆÐÅ°Áö ¾È¿¡ µé¾î ÀÖ´Ù:
+something, something.pubì´ë¼ëŠ” í˜•ì‹ìœ¼ë¡œ ëœ íŒŒì¼ì„ ë³¼ ìˆ˜ ìžˆë‹¤.
+somethingì€ ë³´í†µ id_dsaë‚˜ id_rsaë¼ê³  ë¼ ìžˆë‹¤. 
+ê·¸ì¤‘ .pubíŒŒì¼ì´ ê³µê°œí‚¤ì´ê³  ë‹¤ë¥¸ íŒŒì¼ì€ ê°œì¸í‚¤ì´ë‹¤. ë§Œì•½ ì´ íŒŒì¼ì´ ì—†ê±°ë‚˜ .ssh ë””ë ‰í† ë¦¬ë„ ì—†ìœ¼ë©´ ssh-keygenì´ë¼ëŠ” í”„ë¡œê·¸ëž¨ìœ¼ë¡œ í‚¤ë¥¼ ìƒì„±í•´ì•¼ í•œë‹¤. 
+ssh-keygen í”„ë¡œê·¸ëž¨ì€ ë¦¬ëˆ…ìŠ¤ë‚˜ Macì˜ SSH íŒ¨í‚¤ì§€ì— í¬í•¨ë¼ ìžˆê³  ìœˆë„ëŠ” MSysGit íŒ¨í‚¤ì§€ ì•ˆì— ë“¤ì–´ ìžˆë‹¤:
 
 $ ssh-keygen
 Generating public/private rsa key pair.
@@ -22,12 +24,12 @@ Your identification has been saved in /Users/schacon/.ssh/id_rsa.
 Your public key has been saved in /Users/schacon/.ssh/id_rsa.pub.
 The key fingerprint is:
 43:c5:5b:5f:b1:f1:50:43:ad:20:a6:92:6a:1f:9a:3a schacon@agadorlaptop.local
-¸ÕÀú Å°¸¦ ¾îµð¿¡ ÀúÀåÇÒÁö °æ·Î¸¦(.ssh/id_rsa) ÀÔ·ÂÇÏ°í ¾ÏÈ£¸¦ µÎ ¹ø ÀÔ·ÂÇÑ´Ù. 
-ÀÌ¶§ ¾ÏÈ£¸¦ ºñ¿öµÎ¸é Å°¸¦ »ç¿ëÇÒ ¶§ ¾ÏÈ£¸¦ ¹¯Áö ¾Ê´Â´Ù.
+ë¨¼ì € í‚¤ë¥¼ ì–´ë””ì— ì €ìž¥í• ì§€ ê²½ë¡œë¥¼(.ssh/id_rsa) ìž…ë ¥í•˜ê³  ì•”í˜¸ë¥¼ ë‘ ë²ˆ ìž…ë ¥í•œë‹¤. 
+ì´ë•Œ ì•”í˜¸ë¥¼ ë¹„ì›Œë‘ë©´ í‚¤ë¥¼ ì‚¬ìš©í•  ë•Œ ì•”í˜¸ë¥¼ ë¬»ì§€ ì•ŠëŠ”ë‹¤.
 
-»ç¿ëÀÚ´Â ±× ´ÙÀ½¿¡ ÀÚ½ÅÀÇ °ø°³±â¸¦ Git ¼­¹ö °ü¸®ÀÚ¿¡°Ô º¸³»¾ß ÇÑ´Ù. 
-»ç¿ëÀÚ´Â .pub ÆÄÀÏÀÇ ³»¿ëÀ» º¹»çÇÏ¿© ¸ÞÀÏÀ» º¸³»±â¸¸ ÇÏ¸é µÈ´Ù. 
-°ø°³Å°´Â ¾Æ·¡¿Í °°ÀÌ »ý°å´Ù:
+ì‚¬ìš©ìžëŠ” ê·¸ ë‹¤ìŒì— ìžì‹ ì˜ ê³µê°œê¸°ë¥¼ Git ì„œë²„ ê´€ë¦¬ìžì—ê²Œ ë³´ë‚´ì•¼ í•œë‹¤. 
+ì‚¬ìš©ìžëŠ” .pub íŒŒì¼ì˜ ë‚´ìš©ì„ ë³µì‚¬í•˜ì—¬ ë©”ì¼ì„ ë³´ë‚´ê¸°ë§Œ í•˜ë©´ ëœë‹¤. 
+ê³µê°œí‚¤ëŠ” ì•„ëž˜ì™€ ê°™ì´ ìƒê²¼ë‹¤:
 
 $ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU
