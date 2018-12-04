@@ -1,15 +1,15 @@
-## Bouncy Castle
-### 개요
+# Bouncy Castle
+## 개요
 bouncy castle은 암호 작성에 사용되는 API들의 모음입니다.
 
 ### Download
 [link](http://www.bouncycastle.org/java.html)
 
-### 지원 언어
+## 지원 언어
 - java
 - c#
 
-### 역사
+## 역사
 ```
 Bouncy Castle은 두 명의 동료가 서버 측 Java SE에서 작업하는 작업을 변경할 때마다 일련의 암호화 라이브러리를
 다시 작성해야하는 것에 지쳐 있었기 때문에 시작되었습니다. 개발자 중 한 명이 자바 ME (당시 J2ME) 개발에서
@@ -36,14 +36,14 @@ Bouncy Castle 웹 사이트에 나열된 관련 API에 대한 자료로 상업�
 빅토리아 소비자 보호국 (Consumer Affairs Victoria)에서 그 목적을 지원하기 위해 기금 모금을 할 권한이있었습니다.
 ```
 
-### references
+## references
 - [bouncy castle](http://www.bouncycastle.org/java.html)
 - [wikipedia](https://en.wikipedia.org/wiki/Bouncy_Castle_(cryptography))
 - [google translation](https://www.google.com/search?ei=Kk8GXP78FIL-8QXYqL24Aw&q=%EB%B2%88%EC%97%AD%EA%B8%B0&oq=%EB%B2%88%EC%97%AD%EA%B8%B0&gs_l=psy-ab.12...0.0..266970...0.0..0.0.0.......0......gws-wiz.XgI5Z0Og5Sw)
 
 
-## JAVA provider framework
-### 개요
+# JAVA provider framework
+## 개요
 - Java에서 암호화 기술을 사용하기 위한 기본 기능은 JCA (Java Cryptography Architecture)와 그 형제인 Java Cryptography Extension (JCE)에서 제공합니다.
 - JCA 아키텍처는 provider 기반 아키텍처입니다.
 - Java 응용 프로그램과 암호화 공급자 사이의 중간 계층 (인터페이스)으로 정의되었습니다.
@@ -51,11 +51,12 @@ Bouncy Castle 웹 사이트에 나열된 관련 API에 대한 자료로 상업�
 즉, 자바는 provider를 추가해서 추가 기능을 사용할 수 있도록 인터페이스를 정의해 놓았습니다.
 ```
 
-### 제공하는 클래스와 인터페이스
+## 제공하는 클래스와 인터페이스
 - java.security
 - javax.crypto
 - javax.crypto.spec
 - javax.crypto.interfaces
 
-### reference
-- 
+## reference
+- 강의 교안
+
