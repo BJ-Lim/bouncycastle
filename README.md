@@ -1,4 +1,4 @@
-You can see works by members.</br>
+You can see works by leader and members.</br>
 - [Introduction of bouncycastle and JAVA
 provider framework.md](https://github.com/BJ-Lim/bouncycastle/blob/Leader_1/Introduction%20of%20bouncycastle%20and%20JAVA%20provider%20framework.md)
 - [Explanation of Cryptographic Hash APIs.md](https://github.com/BJ-Lim/bouncycastle/blob/master/Explanation%20of%20Cryptographic%20Hash%20APIs.md)
